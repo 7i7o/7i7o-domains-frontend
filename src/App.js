@@ -359,7 +359,7 @@ const App = () => {
 		<div className="App">
 			<div className="container">
 
-				<ToastContainer autoClose={8000}/>
+				<ToastContainer autoClose={8000} position={toast.POSITION.TOP_CENTER} />
 
 				<div className="header-container">
 					<header>
