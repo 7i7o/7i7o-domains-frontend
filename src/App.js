@@ -175,18 +175,19 @@ const App = () => {
 
 					console.log("Domain minted! https://mumbai.polygonscan.com/tx/"+tx.hash);
 					
-					notify("🍄 Domain minted! ", <OpenSeaLink contract={CONTRACT_ADDRESS} mintId={mintId} linkName={domain+tld} />)
-
+					
 					tx = await contract.setRecord(domain, record);
 					const receipt2 = await tx.wait();
-	
+					
 					if (receipt2.status === 1) {
 						console.log("Record set! https://mumbai.polygonscan.com/tx/"+tx.hash);
 					}
-
+					
 					setTimeout(() => {
+						notify("🍄 Domain minted! ", <OpenSeaLink contract={CONTRACT_ADDRESS} mintId={mintId} linkName={domain+tld} />)
 						fetchMints();
 					}, 2000); // Call fetchMints after 2 seconds
+					
 
 					setRecord('');
 					setDomain('');
