@@ -61,6 +61,12 @@ header{
   margin-top: 10px;
 }
 
+.wallet-info-container {
+  background: -webkit-linear-gradient(left, #373B44, #4286f4);
+  background-size: 400% 400%;
+  animation: gradient-animation 16s ease infinite;
+}
+
 .content-container {
   background-color: #a200d6;
 }
@@ -248,6 +254,10 @@ input:focus {
   background-color: lightgreen;
 }
 
+.mint-item {
+  background: linear-gradient(to right bottom, rgb(34, 193, 195) , rgba(251, 215, 134, .9) 55%, rgb(247, 121, 125));
+}
+
 .link{
   color: black;
   text-decoration: none;
@@ -294,4 +304,164 @@ input:focus {
   100% {
     background-position: 0% 50%;
   }
+}
+
+
+
+:root {
+  --anim-props: 4s ease infinite;
+  --pos-l: 0% 50%;
+  --pos-c: 50% 50%;
+  --pos-r: 100% 50%;
+}
+
+
+.gradient1 {
+  background: radial-gradient(farthest-side at 50% 20%, violet 0%, violet 20%, transparent 70%),
+              radial-gradient(farthest-side at 50% 80%, cyan 0%, cyan 20%, transparent 70%);
+  background-size: 800% 100%;
+  /* background-position: 50%; */
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+
+  -webkit-animation: animation1 var(--anim-props);
+  -moz-animation: animation1 var(--anim-props);
+  animation: animation1 var(--anim-props);
+}
+
+@-webkit-keyframes animation1 {
+  0%  {background-position: var(--pos-r);-webkit-text-fill-color: white;}
+  10% {background-position: var(--pos-r);-webkit-text-fill-color: white;}
+  15% {background-position: var(--pos-r);-webkit-text-fill-color: transparent;}
+  25% {background-position: var(--pos-c);-webkit-text-fill-color: transparent;}
+  35% {background-position: var(--pos-c);-webkit-text-fill-color: transparent;}
+  45% {background-position: var(--pos-l);-webkit-text-fill-color: transparent;}
+  85% {background-position: var(--pos-l);-webkit-text-fill-color: transparent;}
+  90% {background-position: var(--pos-l);-webkit-text-fill-color: white;}
+  100%{background-position: var(--pos-l);-webkit-text-fill-color: white;}
+}
+@-moz-keyframes animation1 {
+  0%  {background-position: var(--pos-r);-webkit-text-fill-color: white;}
+  10% {background-position: var(--pos-r);-webkit-text-fill-color: white;}
+  15% {background-position: var(--pos-r);-webkit-text-fill-color: transparent;}
+  25% {background-position: var(--pos-c);-webkit-text-fill-color: transparent;}
+  35% {background-position: var(--pos-c);-webkit-text-fill-color: transparent;}
+  45% {background-position: var(--pos-l);-webkit-text-fill-color: transparent;}
+  85% {background-position: var(--pos-l);-webkit-text-fill-color: transparent;}
+  90% {background-position: var(--pos-l);-webkit-text-fill-color: white;}
+  100%{background-position: var(--pos-l);-webkit-text-fill-color: white;}
+}
+@keyframes animation1 {
+  0%  {background-position: var(--pos-r);-webkit-text-fill-color: white;}
+  10% {background-position: var(--pos-r);-webkit-text-fill-color: white;}
+  15% {background-position: var(--pos-r);-webkit-text-fill-color: transparent;}
+  25% {background-position: var(--pos-c);-webkit-text-fill-color: transparent;}
+  35% {background-position: var(--pos-c);-webkit-text-fill-color: transparent;}
+  45% {background-position: var(--pos-l);-webkit-text-fill-color: transparent;}
+  85% {background-position: var(--pos-l);-webkit-text-fill-color: transparent;}
+  90% {background-position: var(--pos-l);-webkit-text-fill-color: white;}
+  100%{background-position: var(--pos-l);-webkit-text-fill-color: white;}
+}
+
+
+.gradient2 {
+  /* background: linear-gradient(90deg, white, white, white, white, lightgreen, yellow, white, white, white, white); */
+  background: radial-gradient(farthest-side at 50% 20%, lightgreen 0%, lightgreen 20%, transparent 70%),
+              radial-gradient(farthest-side at 50% 80%, yellow 0%, yellow 20%, transparent 70%);
+  background-size: 800% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  -webkit-animation: animation2 var(--anim-props);
+  -moz-animation: animation2 var(--anim-props);
+  animation: animation2 var(--anim-props);
+}
+
+@-webkit-keyframes animation2 {
+  0%  {background-position: var(--pos-r);-webkit-text-fill-color: white;}
+  10% {background-position: var(--pos-r);-webkit-text-fill-color: white;}
+  15% {background-position: var(--pos-r);-webkit-text-fill-color: transparent;}
+  35% {background-position: var(--pos-r);-webkit-text-fill-color: transparent;}
+  45% {background-position: var(--pos-c);-webkit-text-fill-color: transparent;}
+  55% {background-position: var(--pos-c);-webkit-text-fill-color: transparent;}
+  65% {background-position: var(--pos-l);-webkit-text-fill-color: transparent;}
+  85% {background-position: var(--pos-l);-webkit-text-fill-color: transparent;}
+  90% {background-position: var(--pos-l);-webkit-text-fill-color: white;}
+  100%{background-position: var(--pos-l);-webkit-text-fill-color: white;}
+}
+@-moz-keyframes animation2 {
+  0%  {background-position: var(--pos-r);-webkit-text-fill-color: white;}
+  10% {background-position: var(--pos-r);-webkit-text-fill-color: white;}
+  15% {background-position: var(--pos-r);-webkit-text-fill-color: transparent;}
+  35% {background-position: var(--pos-r);-webkit-text-fill-color: transparent;}
+  45% {background-position: var(--pos-c);-webkit-text-fill-color: transparent;}
+  55% {background-position: var(--pos-c);-webkit-text-fill-color: transparent;}
+  65% {background-position: var(--pos-l);-webkit-text-fill-color: transparent;}
+  85% {background-position: var(--pos-l);-webkit-text-fill-color: transparent;}
+  90% {background-position: var(--pos-l);-webkit-text-fill-color: white;}
+  100%{background-position: var(--pos-l);-webkit-text-fill-color: white;}
+}
+@keyframes animation2 {
+  0%  {background-position: var(--pos-r);-webkit-text-fill-color: white;}
+  10% {background-position: var(--pos-r);-webkit-text-fill-color: white;}
+  15% {background-position: var(--pos-r);-webkit-text-fill-color: transparent;}
+  35% {background-position: var(--pos-r);-webkit-text-fill-color: transparent;}
+  45% {background-position: var(--pos-c);-webkit-text-fill-color: transparent;}
+  55% {background-position: var(--pos-c);-webkit-text-fill-color: transparent;}
+  65% {background-position: var(--pos-l);-webkit-text-fill-color: transparent;}
+  85% {background-position: var(--pos-l);-webkit-text-fill-color: transparent;}
+  90% {background-position: var(--pos-l);-webkit-text-fill-color: white;}
+  100%{background-position: var(--pos-l);-webkit-text-fill-color: white;}
+}
+
+
+
+.gradient3 {
+  /* background: linear-gradient(90deg, white, white, white, white, orange, red, white,white,white,white); */
+  background: radial-gradient(farthest-side at 50% 20%, orange 0%, orange 20%, transparent 70%),
+              radial-gradient(farthest-side at 50% 80%, red 0%, red 20%, transparent 70%);
+  background-size: 800% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white;
+
+  -webkit-animation: animation3 var(--anim-props);
+  -moz-animation: animation3 var(--anim-props);
+  animation: animation3 var(--anim-props);
+}
+
+@-webkit-keyframes animation3 {
+  0%  {background-position: var(--pos-r);-webkit-text-fill-color: white;}
+  10% {background-position: var(--pos-r);-webkit-text-fill-color: white;}
+  15% {background-position: var(--pos-r);-webkit-text-fill-color: transparent;}
+  55% {background-position: var(--pos-r);-webkit-text-fill-color: transparent;}
+  65% {background-position: var(--pos-c);-webkit-text-fill-color: transparent;}
+  75% {background-position: var(--pos-c);-webkit-text-fill-color: transparent;}
+  85% {background-position: var(--pos-l);-webkit-text-fill-color: transparent;}
+  90% {background-position: var(--pos-l);-webkit-text-fill-color: white;}
+  100%{background-position: var(--pos-l);-webkit-text-fill-color: white;}
+}
+@-moz-keyframes animation3 {
+  0%  {background-position: var(--pos-r);-webkit-text-fill-color: white;}
+  10% {background-position: var(--pos-r);-webkit-text-fill-color: white;}
+  15% {background-position: var(--pos-r);-webkit-text-fill-color: transparent;}
+  55% {background-position: var(--pos-r);-webkit-text-fill-color: transparent;}
+  65% {background-position: var(--pos-c);-webkit-text-fill-color: transparent;}
+  75% {background-position: var(--pos-c);-webkit-text-fill-color: transparent;}
+  85% {background-position: var(--pos-l);-webkit-text-fill-color: transparent;}
+  90% {background-position: var(--pos-l);-webkit-text-fill-color: white;}
+  100%{background-position: var(--pos-l);-webkit-text-fill-color: white;}
+}
+@keyframes animation3 {
+  0%  {background-position: var(--pos-r);-webkit-text-fill-color: white;}
+  10% {background-position: var(--pos-r);-webkit-text-fill-color: white;}
+  15% {background-position: var(--pos-r);-webkit-text-fill-color: transparent;}
+  55% {background-position: var(--pos-r);-webkit-text-fill-color: transparent;}
+  65% {background-position: var(--pos-c);-webkit-text-fill-color: transparent;}
+  75% {background-position: var(--pos-c);-webkit-text-fill-color: transparent;}
+  85% {background-position: var(--pos-l);-webkit-text-fill-color: transparent;}
+  90% {background-position: var(--pos-l);-webkit-text-fill-color: white;}
+  100%{background-position: var(--pos-l);-webkit-text-fill-color: white;}
 }
